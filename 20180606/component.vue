@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Vue Sample</title>
+</head>
+<body>
+		<div id="app">
+			<button>컴포넌트 등록</button>
+		
+		</div>
+			<my-component></my-component>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js" ></script>
+		<script>
+			Vue.component('my-component', {
+				template : '<div> 전역 컴포넌트가 등록 되었습니다.</div>'
+			});
+
+			new Vue(
+			{
+				el: '#app',
+				data: {
+					message: 'hello vue.js'
+				}
+			}
+			);
+
+		</script>	
+
+</body>
+</html>
